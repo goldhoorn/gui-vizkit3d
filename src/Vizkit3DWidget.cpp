@@ -985,5 +985,6 @@ void Vizkit3DWidget::setCameraManipulator(CAMERA_MANIPULATORS manipulatorType, b
 
     setCameraManipulator(newManipulator);
     currentManipulator = manipulatorType;
+    emit propertyChanged("manipulator");
 }
 
